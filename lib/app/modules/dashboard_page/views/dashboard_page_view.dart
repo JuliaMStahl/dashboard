@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:dependency_manager/dependency_manager.dart';
 
+import '../../../../generated/locales.g.dart';
 import '../controllers/dashboard_page_controller.dart';
 
 class DashboardPageView extends GetView<DashboardPageController> {
@@ -14,7 +15,7 @@ class DashboardPageView extends GetView<DashboardPageController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: Text(LocaleKeys.home.tr),
         centerTitle: true,
         backgroundColor: Colors.purple,
       ),
@@ -24,7 +25,7 @@ class DashboardPageView extends GetView<DashboardPageController> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Bem-vinda a Home, $nome',
+              LocaleKeys.bem_vinda.tr + ', $nome',
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 30),
@@ -33,7 +34,7 @@ class DashboardPageView extends GetView<DashboardPageController> {
                 RedirectTo.ROUTES_PERFIL,
                 arguments: nome,
               ),
-              child: const Text('Ir para perfil'),
+              child: Text(LocaleKeys.ir_perfil.tr),
             ),
           ],
         ),
