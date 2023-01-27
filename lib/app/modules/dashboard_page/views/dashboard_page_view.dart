@@ -6,7 +6,9 @@ import 'package:dependency_manager/dependency_manager.dart';
 import '../controllers/dashboard_page_controller.dart';
 
 class DashboardPageView extends GetView<DashboardPageController> {
-  const DashboardPageView({Key? key}) : super(key: key);
+  DashboardPageView({Key? key}) : super(key: key);
+
+  final String? nome = Get.arguments;
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +23,16 @@ class DashboardPageView extends GetView<DashboardPageController> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              'Bem-vinda a Home',
+            Text(
+              'Bem-vinda a Home, $nome',
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () => Get.toNamed(RedirectTo.ROUTES_PERFIL, arguments: 'Gabi'),
+              onPressed: () => Get.toNamed(
+                RedirectTo.ROUTES_PERFIL,
+                arguments: nome,
+              ),
               child: const Text('Ir para perfil'),
             ),
           ],
