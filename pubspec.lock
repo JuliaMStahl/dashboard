@@ -8,6 +8,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "50.0.0"
+  acesso:
+    dependency: transitive
+    description:
+      path: "."
+      ref: master
+      resolved-ref: "892bc41a2fd937958180b8241c120d2f4cffb669"
+      url: "https://github.com/JuliaMStahl/acesso.git"
+    source: git
+    version: "0.0.1"
   analyzer:
     dependency: transitive
     description:
@@ -111,7 +120,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: aa58c21c45c4479a8b0c7c645976d418ba4359f8
+      resolved-ref: "72be2d9b9a93d4209b39e3d07240ad470c6e5fef"
       url: "https://github.com/JuliaMStahl/dependency-manager.git"
     source: git
     version: "0.0.1"
@@ -242,7 +251,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "545fdbbb99b38b64751921021cc4e88bce0218d9"
+      resolved-ref: e0861ad872ec8f0343c3aac40f5fb6823e1a80c5
       url: "https://github.com/JuliaMStahl/perfil.git"
     source: git
     version: "0.0.2"
@@ -286,8 +295,17 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "8f62505701f0375389a704b0862bebc97668965c"
+      resolved-ref: "8c8dd7d4ce2c03e136cd0405ff4f97cd91bea8cd"
       url: "https://github.com/JuliaMStahl/routes_lib.git"
+    source: git
+    version: "0.0.1"
+  shared_lib:
+    dependency: transitive
+    description:
+      path: "."
+      ref: master
+      resolved-ref: "59f0ec5754d2168bcfb08e8192596464a20bf43c"
+      url: "https://github.com/JuliaMStahl/shared_lib.git"
     source: git
     version: "0.0.1"
   sky_engine:
@@ -344,6 +362,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.12"
+  translation_lib:
+    dependency: transitive
+    description:
+      path: "."
+      ref: master
+      resolved-ref: b38f829028e29e6631de4f79e902ce1728341214
+      url: "https://github.com/JuliaMStahl/translation_lib.git"
+    source: git
+    version: "0.0.1"
   typed_data:
     dependency: transitive
     description:

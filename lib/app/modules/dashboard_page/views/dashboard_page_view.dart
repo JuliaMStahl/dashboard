@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:dependency_manager/dependency_manager.dart';
-
 import '../../../../generated/locales.g.dart';
 import '../controllers/dashboard_page_controller.dart';
+import 'package:shared_lib/utils/widgets/botao_padrao.dart';
 
 class DashboardPageView extends GetView<DashboardPageController> {
   DashboardPageView({Key? key}) : super(key: key);
@@ -29,12 +28,12 @@ class DashboardPageView extends GetView<DashboardPageController> {
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 30),
-            ElevatedButton(
+            BotaoPadrao(
               onPressed: () => Get.toNamed(
                 RedirectTo.ROUTES_PERFIL,
                 arguments: nome,
               ),
-              child: Text(LocaleKeys.ir_perfil.tr),
+              texto: LocaleKeys.ir_perfil.tr
             ),
           ],
         ),
