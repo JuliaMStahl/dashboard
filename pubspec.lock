@@ -9,14 +9,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  auto_injector:
-    dependency: transitive
-    description:
-      name: auto_injector
-      sha256: "2952a4d4339ed3b65e8e54765ec68ee6ada5cb21d83cb8d39e3f6b4e690ab5ca"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -49,14 +41,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.1"
-  crypto:
-    dependency: transitive
-    description:
-      name: crypto
-      sha256: aa274aa7774f8964e4f4f38cc994db7b6158dd36e9187aaceaddc994b35c6c67
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -78,14 +62,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
-  flutter_modular:
-    dependency: "direct main"
-    description:
-      name: flutter_modular
-      sha256: ac6298ce1abd414286ee5a554fc45e81e358461979b5d4e02c8abd685e3b23f2
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.3.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -131,14 +107,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
-  modular_core:
-    dependency: transitive
-    description:
-      name: modular_core
-      sha256: "5baaa460ac9d85d457d6864ef41a2194b8115a6bdeb585a684789f2d9004c892"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.3.2"
   path:
     dependency: transitive
     description:
@@ -151,19 +119,11 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: modular
-      resolved-ref: "4e3998f272001362cae7eddead3063c43f32b5dd"
+      ref: go-router
+      resolved-ref: "5f6d3f572dd7d4253888433132a6e0b2de16bbf7"
       url: "https://github.com/JuliaMStahl/perfil.git"
     source: git
     version: "0.0.2"
-  result_dart:
-    dependency: transitive
-    description:
-      name: result_dart
-      sha256: f28a171d55e2e1c1753b41d4d8edcaff886f103e73c575d14764913907e57928
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -217,22 +177,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.1"
-  typed_data:
-    dependency: transitive
-    description:
-      name: typed_data
-      sha256: "26f87ade979c47a150c9eaab93ccd2bebe70a27dc0b4b29517f2904f04eb11a5"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.3.1"
-  uuid:
-    dependency: transitive
-    description:
-      name: uuid
-      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.7"
   vector_math:
     dependency: transitive
     description:
@@ -242,5 +186,5 @@ packages:
     source: hosted
     version: "2.1.4"
 sdks:
-  dart: ">=3.0.0 <4.0.0"
+  dart: ">=3.0.0-0 <4.0.0"
   flutter: ">=1.17.0"

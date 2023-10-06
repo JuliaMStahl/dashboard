@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-
-import '../controllers/dashboard_page_controller.dart';
+import 'package:perfil/app/views/perfil_view.dart';
 
 class DashboardView extends StatelessWidget {
-  DashboardView({Key? key, required this.controller}) : super(key: key);
+  DashboardView({Key? key, required this.username}) : super(key: key);
 
-  final DashboardController controller;
-  final String? nome = Modular.args.data.toString();
+  final String username;
 
   @override
   Widget build(BuildContext context) {
@@ -23,12 +20,18 @@ class DashboardView extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Bem-vinda' + ', $nome',
+              'Bem-vinda' + ', $username',
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              onPressed: controller.goToNextPage,
+              onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return PerfilView(username: username);
+                    },
+                  ),
+                ),
               child: Text('Ir para perfil'),
             ),
           ],
